@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Product Landing Page</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+
+    <header id="header" class="header">
+      <div class="img-wrapper">
+        <img src="logo.svg" alt="logo" id="header-img" class="header-img">
+      </div>
+      <nav id="nav-bar" class="nav">
+        <a href="#hero" class="nav-link">About</a>
+        <a href="#how" class="nav-link">How to</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+    </header>
+
+    <main class="main">
+
+      <section class="hero" id="hero">
+        <h1 class="title">Go organic!</h1>
+        <p class="hero-copy">OrganiCup is the award-winning menstrual cup that replaces pads and tampons. Easier, healthier, greener.</p>
+      </section>
+
+      <section class="how" id="how">
+        <h2 class="subtitle">How does it work?</h2>
+        <div class="video">
+          <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/1P1jjAZp_ko" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <h2 class="subtitle">Contact</h2>
+        <p class="contact-copy">Would you like to contact us? Please fill the following form:</p>
+        <form id="form" method="get" action="https://www.freecodecamp.com/email-submit" class="form">
+          <div class="form-field">
+            <label for="name" id="name-label">Name</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="your name"
+              required
+            />
+          </div>
+          <div class="form-field">
+            <label for="email" id="email-label">E-mail</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="name@address.com"
+              required
+            />
+          </div>
+          <div class="form-field last">
+            <label for="textarea">Your question</label>
+            <textarea id="textarea" name="textarea" class="textarea" required>Write here</textarea>
+          </div>
+          <div class="btn-wrapper">
+            <input type="submit" id="submit" class="btn" value="Submit">
+          </div>
+        </form>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      Photo by <a href="https://unsplash.com/@ocilie?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Oana Cristina</a> on <a href="https://unsplash.com/s/photos/menstrual-cup?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> | Organicup logo from <a href="https://www.organicup.com/">organicup.com</a>
+    </footer>
+
+  </body>
+</html>
